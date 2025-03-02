@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #2c5e48;
+    --secondary-color: #f8f8f8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiri Quran', serif;
+}
+
+body {
+    background: var(--secondary-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.surah-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.surah-btn {
+    background: white;
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.surah-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.verses-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.ayah {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    text-align: right;
+    line-height: 2.5;
+    color: #333;
+}
+
+.ayah-number {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.bismillah {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin: 2rem 0;
+}
